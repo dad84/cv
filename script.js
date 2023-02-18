@@ -21,13 +21,14 @@ function execute(command) {
 
   // Use a switch statement to determine the result based on the command
   switch (command) {
-    case 'help':
+ case 'help':
       result = `
         Available commands:
         - help: display this help message
         - about: display information about me
         - project: display my last projects and experience
         - skills: display my skills and experience
+        - language:Language Proficiency
         - contact: display my contact information
       `;
       break;
@@ -67,6 +68,16 @@ function execute(command) {
         - Excellent written and verbal communication skills
         - Experience with natural language processing and computer vision
 
+      `;
+      break;
+      
+      case 'language':
+      result = `
+       Language Proficiency:
+       - English: Good spoken and written skills.
+       - Norwegian: Okay spoken and little written skills.
+       - Russian: Only able to speak.
+       - Lithuanian: Native language.
       `;
       break;
 
